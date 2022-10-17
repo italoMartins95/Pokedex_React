@@ -2,7 +2,16 @@ import Styles from "./Loader.module.css"
 
 function Loader(){
     return(
-        <div className={Styles.loader}></div>
+        <div className={Styles.lds_roller}>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     )
 }
 
