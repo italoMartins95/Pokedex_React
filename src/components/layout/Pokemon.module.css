@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.pokemonCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 240px;
+
+    margin: 15px;
+    border-radius: 10px;
+
+    color: white;
+}
+
+.pokemonCard img{
+    width: 120px;
+    height: 120px;
+
+    cursor: pointer;
+}
+
+.pokemonCardTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.pokemonCardTop p, h3{
+    margin: 1px;
+}
+
+.pokemonCardMediun{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+}
+
+.pokemonCardMediun p{
+    min-width: 50px;
+    height: 28px;
+
+    padding: 1px 10px;
+    margin: 0 5px;
+
+    background-color: rgba(0, 0, 0, 0.334);
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.pokemonCardBottom{
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 100%;
+}
+
+.flexBoxColumn{
+	display: flex;
+    flex-direction: column;
+	align-items: center;	
+}
+
+.flexBoxRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: auto;
+}
+
+.weight svg , .height svg{
+    margin: 0 10px;
+}
+
+.weight h3 , p {
+	margin: 0;	
+}
+
+.height h3 , p {
+	margin: 0;		
+}
+
+.btnMoreInformations{
+    	width: 100%;
+    	height: 35px;
+
+        background-color: rgba(128, 0, 128, 0.425);
+        color: white;
+
+    	border-radius: 0 0 10px 10px;
+	    border: none;
+
+        font-family: 'Open Sans';
+
+        margin-top: 5px;
+}
+
+.btnMoreInformations svg{
+    margin: 0 5px;
+}

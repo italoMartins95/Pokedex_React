@@ -1,0 +1,24 @@
+.paginationControl{
+    display: flex;
+    align-items: center;
+
+    margin: 0;
+}
+
+.buttons{
+    background-color: transparent;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.buttons svg{
+    font-size: 20px;
+
+    color: white;
+}

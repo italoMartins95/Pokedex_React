@@ -1,0 +1,150 @@
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    width: 95%;
+
+    margin: 0;
+    padding-top: 30px;
+}
+
+.searchTypes{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+    width: 350px;
+}
+
+.searchTypes > span{
+    padding-bottom: 10px;
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.searchTypes > span:hover{
+    text-decoration: underline;
+}
+
+.searchTypesContent{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 7px;
+
+    overflow-x: scroll;
+}
+
+.searchTypesContents svg{
+    display: flex;
+
+    font-size: 20px;
+
+    margin-right: 20px;
+}
+
+.searchTypesContent::-webkit-scrollbar{
+    height: 5px;
+}
+  
+.searchTypesContent::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 0.108);
+    border-radius: 20px;        /* color of the tracking area */
+}
+  
+.searchTypesContent::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.233);    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+    border: none;  /* creates padding around scroll thumb */
+}
+
+.searchTypesContent span{
+    background-color: #ffffff1d;
+    border-radius: 5px;
+
+    padding: 1px 10px 5px 10px;
+    margin: 0 5px;
+
+    cursor: pointer;
+}
+
+.inputSearch{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    width: auto;
+
+    padding-top: 30px;
+}
+
+.inputSubmit{
+    display: flex;
+
+    margin: 10px 0;
+}
+
+.inputSubmit input{
+    width: 500px;
+    height: 40px;
+
+    padding: 0 10px;
+
+    background-color: transparent;
+    color: white;
+    
+    border: 2px solid #3159ff;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.inputSubmit input::placeholder{
+    color: rgba(255, 255, 255, 0.408);
+}
+
+.inputSubmit button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 40px;
+
+    margin: 0;
+
+    outline: none;
+
+    background-color: #3159ff;
+    color: white;
+    
+    border-radius: 0 10px 10px 0;
+    border: 2px solid #3159ff;
+
+    cursor: pointer;
+}
+
+.inputSubmit button svg{
+    font-size: 25px;
+}
+
+.btnInicio{
+    display: flex;
+    align-items: center;
+
+    width: min-content;
+
+    padding: 5px 7px 5px 3px;
+
+    background-color: rgba(255, 255, 255, 0.192);
+    border-radius: 5px;
+}
+
+.btnInicio svg{
+    font-size: 22px;
+    margin: 0 5px;
+}
