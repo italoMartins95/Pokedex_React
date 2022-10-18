@@ -28,7 +28,7 @@ function Search({onSearchHandle , onSearchTypeHandle , nowPage , totPagination ,
         if(search == undefined || search == ""){
             onSearchHandle(undefined)
         }else{
-            onSearchHandle(search)
+            onSearchHandle(search.toLowerCase())
         }
     }
 
@@ -80,7 +80,7 @@ function Search({onSearchHandle , onSearchTypeHandle , nowPage , totPagination ,
                     }
             </div>
             </div>
-            <div className={Styles.inputSearch} onSubmit={searchPokemon}>                
+            <div className={Styles.inputSearch}>                
                 <Pagination page={nowPage+1}
                             totPage={Math.ceil(totPagination/40)}
                             prevPage={prevPage}
