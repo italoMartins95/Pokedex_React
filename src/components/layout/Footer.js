@@ -7,13 +7,13 @@ function Footer(){
     return(
         <footer className={Styles.footer}>
             <div>
-                <a href="#" target="_self" className={Styles.a}>
+                <a href="https://github.com/italoMartins95" target="_blank" className={Styles.a}>
                     <BsGithub />
                 </a>
-                <a href="#" target="_self" className={Styles.a}>
+                <a href="https://www.linkedin.com/in/italo-martins-3a73b1190/" target="_blank" className={Styles.a}>
                     <BsLinkedin />
                 </a>
-                <a href="#" target="_self" className={Styles.a}>
+                <a href="" target="_self" className={Styles.a}>
                     <HiInformationCircle />
                 </a>
             </div>
