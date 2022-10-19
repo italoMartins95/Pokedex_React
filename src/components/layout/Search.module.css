@@ -149,7 +149,7 @@
     margin: 0 5px;
 }
 
-@media (max-width: 450px){
+@media (max-width: 426px){
     .search{
         flex-direction: column-reverse;
 
