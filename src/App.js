@@ -7,6 +7,7 @@ import Header from "../src/components/layout/Header"
 import Search from "../src/components/layout/Search"
 import Pokemon from "../src/components/layout/Pokemon"
 import Pokedex from "./components/layout/Pokedex";
+import Footer from "./components/layout/Footer";
 
 function App() {
 
@@ -51,7 +52,7 @@ function App() {
       }
   }
 
-  const itemPerPage = 40
+  const itemPerPage = 20
 
   const fetchPokemons = async () => {
     try{
@@ -109,8 +110,9 @@ function App() {
                 />
               )
             )
-          }
+      }
       </Container>
+      <Footer />
     </>
   );
 }

@@ -67,7 +67,7 @@
     background-color: #ffffff1d;
     border-radius: 5px;
 
-    padding: 1px 10px 5px 10px;
+    padding: 4px 10px 9px 10px;
     margin-right: 5px;
 
     cursor: pointer;
@@ -151,10 +151,36 @@
 
 @media (max-width: 450px){
     .search{
-        flex-direction: column;
+        flex-direction: column-reverse;
+
+        width: 99%;
+    }
+
+    .inputSearch{
+        width: 97%;
     }
 
     .inputSubmit input{
-        width: 300px;
+        width: 358px;
+
+        border-radius: 3px 0 0 3px;
+    }
+
+    .inputSubmit button{
+        border-radius: 0 3px 3px 0;
+    }
+
+    .searchTypes{
+        position: relative;
+        width: 97%;
+    }
+
+    .searchTypes > h3{
+        display: none;
+    }
+
+    .btnInicio{
+        position: absolute;
+        top: -175%;
     }
 }

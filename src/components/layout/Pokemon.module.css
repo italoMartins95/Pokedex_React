@@ -8,7 +8,7 @@
 
     width: 240px;
 
-    margin: 15px;
+    margin: 10px;
     border-radius: 10px;
 
     color: white;
@@ -106,4 +106,41 @@
 
 .btnMoreInformations svg{
     margin: 0 5px;
+}
+
+@media (max-width: 450px){
+    .pokemonCard{
+        width: 120px;
+        height: 150px;
+    }
+
+    .pokemonCard img{
+        width: 75px;
+        height: 75px;
+    }
+
+    .pokemonCardTop p{
+        font-size: .9em;
+    }
+
+    .pokemonCardTop h3{
+        font-size: .9em;
+    }
+
+    .pokemonCardTop p, h3{
+        margin: 2px 0 0 0;
+    }
+
+    .pokemonCardMediun{
+        display: none;
+    }
+
+    .pokemonCardBottom{
+        display: none;
+    }
+
+    .btnMoreInformations{
+        height: 25px;
+        font-size: 10px;
+    }
 }

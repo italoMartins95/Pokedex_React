@@ -1,5 +1,15 @@
 .conteiner{
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    height: 1850px;
+}
+
+@media (max-width: 450px){
+    .conteiner{
+        height: 1480px;
+    }
 }

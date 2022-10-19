@@ -82,7 +82,7 @@ function Search({onSearchHandle , onSearchTypeHandle , nowPage , totPagination ,
             </div>
             <div className={Styles.inputSearch}>                
                 <Pagination page={nowPage+1}
-                            totPage={Math.ceil(totPagination/40)}
+                            totPage={Math.ceil(totPagination/20)}
                             prevPage={prevPage}
                             nextPage={nextPage}
                 />                
