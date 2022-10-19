@@ -161,7 +161,7 @@
     }
 
     .inputSubmit input{
-        width: 300px;
+        width: 42vh;
 
         border-radius: 3px 0 0 3px;
     }
@@ -181,6 +181,6 @@
 
     .btnInicio{
         position: absolute;
-        top: -175%;
+        top: -185%;
     }
 }

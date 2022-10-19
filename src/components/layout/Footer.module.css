@@ -13,14 +13,20 @@
     margin-right: 20px;
 }
 
-.a > svg{
+.a svg{
     color: white;
-    
+
     margin: 0 10px;
+
+    font-size: 40px;
 }
 
 @media (max-width: 420px){
     .footer{
         height: 150px;
+    }
+
+    .a svg{
+        font-size: 30px;
     }
 }
