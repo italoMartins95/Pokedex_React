@@ -1,12 +1,26 @@
 .footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
     width: 100%;
     height: 300px;
 
     background-color: #e5501e;
 }
 
-@media (max-width: 425px){
+.footer div{
+    margin-right: 20px;
+}
+
+.a > svg{
+    color: white;
+    
+    margin: 0 10px;
+}
+
+@media (max-width: 401px){
     .footer{
-        height: 170px;
+        height: 150px;
     }
 }

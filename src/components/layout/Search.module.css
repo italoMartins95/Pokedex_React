@@ -149,11 +149,11 @@
     margin: 0 5px;
 }
 
-@media (max-width: 426px){
+@media (max-width: 401px){
     .search{
         flex-direction: column-reverse;
 
-        width: 99%;
+        width: 100%;
     }
 
     .inputSearch{
@@ -161,7 +161,7 @@
     }
 
     .inputSubmit input{
-        width: 358px;
+        width: 300px;
 
         border-radius: 3px 0 0 3px;
     }

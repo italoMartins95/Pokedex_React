@@ -1,7 +1,6 @@
 import Styles from "../layout/Header.module.css"
 
 import { SiPokemon } from "react-icons/si"
-import { CgPokemon } from "react-icons/cg"
 
 import charizard from "../../images/375px-Charizard_SSBU.webp"
 
