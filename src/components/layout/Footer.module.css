@@ -19,7 +19,7 @@
     margin: 0 10px;
 }
 
-@media (max-width: 401px){
+@media (max-width: 420px){
     .footer{
         height: 150px;
     }

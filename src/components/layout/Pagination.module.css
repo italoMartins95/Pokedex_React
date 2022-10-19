@@ -23,7 +23,7 @@
     color: white;
 }
 
-@media (max-width: 401px){
+@media (max-width: 421px){
     .paginationControl > span{
         margin-top: -5px;
     }

@@ -31,7 +31,7 @@
     margin-right: 50px;
 }
 
-@media (max-width: 401px){
+@media (max-width: 421px){
 
     .headerContent{
         flex-direction: column;
