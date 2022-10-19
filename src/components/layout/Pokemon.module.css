@@ -110,8 +110,10 @@
 
 @media (max-width: 450px){
     .pokemonCard{
-        width: 100px;
+        width: 120px;
         height: 150px;
+
+        margin: 5px;
     }
 
     .pokemonCard img{
