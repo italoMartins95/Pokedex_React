@@ -1,6 +1,6 @@
 import { useState , useEffect } from "react";
 
-import { searchPokemons , getPokemons , searchPokemonData , searchPokemonTypes } from "./Api"
+import { searchPokemons , getPokemons , searchPokemonData , searchPokemonTypes , defaultColorForTypes } from "./Api"
 
 import Container from "../src/components/layout/Conteiner";
 import Header from "../src/components/layout/Header"
@@ -15,6 +15,7 @@ function App() {
   const [pokemonSearch , setPokemonSearch] = useState([])
   const [pokemonTypeSearch , setPokemonTypeSearch] = useState([])
   const [stylesPokemons , setStylesPokemons] = useState([])
+  const [pokemonSearchStyle , setPokemonSearchStyle] = useState()
 
   const [loading , setloading] = useState(true)
   const [page , setPage] = useState(0)
@@ -32,6 +33,8 @@ function App() {
         }else{
           setSearchVisible(true)
           setPokemonSearch(resultSearch)
+          var stylePokemonSearch = defaultColorForTypes.filter(typePokemon => typePokemon.nome == resultSearch.types[0].type.name)
+          setPokemonSearchStyle(stylePokemonSearch[0])
         }
     }
   }
@@ -98,6 +101,7 @@ function App() {
                         pokemonTypes={pokemonSearch.types}
                         pokemonWeight={pokemonSearch.weight}
                         pokemonHeight={pokemonSearch.height}
+                        colorsStyle={pokemonSearchStyle}
               />
             ) : (
               pokemonTypeSearch.length > 0 ? (

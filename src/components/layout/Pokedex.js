@@ -1,11 +1,11 @@
 import Styles from "./Pokedex.module.css"
 
-import { especiesData } from "../../Api"
+import { defaultColorForTypes } from "../../Api"
 
 import Pokemon from "./Pokemon"
 import Loader from "./Loader"
 
-function Pokedex({pokemons , pokemonsEspecie , loading}){   
+function Pokedex({pokemons , loading}){  
 
     return(
         <section className={Styles.pokedex}>
@@ -17,6 +17,7 @@ function Pokedex({pokemons , pokemonsEspecie , loading}){
                     ) : (
                         pokemons.map((el , index) => {
                             if(el.sprites.other.dream_world.front_default != null){
+                                let colorStyleOne = defaultColorForTypes.filter(typePokemon => typePokemon.nome == el.types[0].type.name)
                                 return(
                                     <Pokemon key={index} 
                                             pokemonName={el.name}
@@ -26,6 +27,7 @@ function Pokedex({pokemons , pokemonsEspecie , loading}){
                                             pokemonTypes={el.types}
                                             pokemonWeight={el.weight}
                                             pokemonHeight={el.height}
+                                            colorsStyle={colorStyleOne[0]}
                                             />
                                 )
                             } 

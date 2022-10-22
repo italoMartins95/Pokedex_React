@@ -1,5 +1,5 @@
 import Styles from "../layout/Search.module.css"
-import  { searchTypes } from "../../Api"
+import  { searchTypes , defaultColorForTypes } from "../../Api"
 
 import Input from "../forms/Input"
 import Pagination from "./Pagination"
@@ -73,8 +73,9 @@ function Search({onSearchHandle , onSearchTypeHandle , nowPage , totPagination ,
                     {
                         pokemonTypes.map((type , index) => {
                             if(type != "unknown" && type != "shadow"){
+                                let colorStyleOne = defaultColorForTypes.filter(el => el.nome == type)
                             return(
-                                <span onClick={() => searchPokemonPerTypes(type)} key={index}>{type}</span>
+                                <span onClick={() => searchPokemonPerTypes(type)} key={index} style={{color: colorStyleOne[0].color, background: colorStyleOne[0].backgroundColor}}>{type}</span>
                             )}
                         })
                     }

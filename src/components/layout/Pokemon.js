@@ -4,7 +4,7 @@ import { FaBalanceScaleRight } from "react-icons/fa"
 import { SlEnergy } from "react-icons/sl"
 import { AiOutlineColumnHeight } from "react-icons/ai"
 
-function Pokemon({pokemonName , pokemonImg , pokemonAlt , pokemonId , pokemonTypes , pokemonWeight , pokemonHeight , colorButton}){
+function Pokemon({pokemonName , pokemonImg , pokemonAlt , pokemonId , pokemonTypes , pokemonWeight , pokemonHeight , colorsStyle}){
 
     return(
         <article className={Styles.pokemonCard}>
@@ -36,7 +36,7 @@ function Pokemon({pokemonName , pokemonImg , pokemonAlt , pokemonId , pokemonTyp
                     <p>Altura</p>         
                 </div>
 			</div>
-            <button className={Styles.btnMoreInformations}>
+            <button className={Styles.btnMoreInformations} style={{color: colorsStyle.color , background: colorsStyle.backgroundColor}}>
                 <SlEnergy />
                 Mais Detalhes
             </button>
