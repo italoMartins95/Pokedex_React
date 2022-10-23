@@ -4,12 +4,4 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    height: 1580px;
-}
-
-@media (max-width: 421px){
-    .conteiner{
-        height: 1480px;
-    }
 }

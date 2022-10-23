@@ -6,17 +6,19 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 240px;
+    width: 300px;
 
     margin: 10px;
     border-radius: 10px;
 
     color: white;
+
+    cursor: pointer;
 }
 
-.pokemonCard img{
-    width: 120px;
-    height: 120px;
+.pokemonCard > img{
+    width: 150px;
+    height: 150px;
 
     cursor: pointer;
 }
@@ -40,19 +42,28 @@
     align-items: center;
 
     width: 100%;
+
+    margin: 7px 0;
 }
 
 .pokemonCardMediun p{
+    display: flex;
+    align-items: center;
+
     min-width: 50px;
     height: 28px;
 
-    padding: 1px 10px;
+    padding: 1px 10px 5px 10px;
     margin: 0 5px;
 
     background-color: rgba(0, 0, 0, 0.334);
     border-radius: 10px;
 
     text-align: center;
+}
+
+.pokemonCardMediun p img{
+    margin-right: 5px;
 }
 
 .pokemonCardBottom{
@@ -100,9 +111,12 @@
 	    border: none;
 
         font-family: 'Open Sans';
+        font-weight: bold;
         font-size: 15px;
 
         margin-top: 5px;
+
+        cursor: pointer;
 }
 
 .btnMoreInformations svg{
@@ -111,15 +125,15 @@
 
 @media (max-width: 450px){
     .pokemonCard{
-        width: 120px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
 
         margin: 5px;
     }
 
     .pokemonCard img{
-        width: 75px;
-        height: 75px;
+        width: 100px;
+        height: 100px;
     }
 
     .pokemonCardTop p{
@@ -144,6 +158,8 @@
 
     .btnMoreInformations{
         height: 25px;
-        font-size: 10px;
+        font-size: 12px;
+
+        font-weight: bold;
     }
 }

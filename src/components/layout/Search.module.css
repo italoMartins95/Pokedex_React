@@ -15,7 +15,7 @@
     flex-direction: column;
     align-content: flex-start;
 
-    width: 350px;
+    width: 500px;
 }
 
 .searchTypes > span{
@@ -64,13 +64,20 @@
 }
 
 .searchTypesContent span{
-    background-color: #ffffff1d;
+    display: flex;
+
     border-radius: 5px;
 
     padding: 4px 10px 9px 10px;
     margin-right: 5px;
 
     cursor: pointer;
+
+    font-weight: bold;
+}
+
+.searchTypesContent span img{
+    margin-right: 7px;
 }
 
 .inputSearch{

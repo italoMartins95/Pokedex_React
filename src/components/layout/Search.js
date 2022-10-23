@@ -75,7 +75,10 @@ function Search({onSearchHandle , onSearchTypeHandle , nowPage , totPagination ,
                             if(type != "unknown" && type != "shadow"){
                                 let colorStyleOne = defaultColorForTypes.filter(el => el.nome == type)
                             return(
-                                <span onClick={() => searchPokemonPerTypes(type)} key={index} style={{color: colorStyleOne[0].color, background: colorStyleOne[0].backgroundColor}}>{type}</span>
+                                <span onClick={() => searchPokemonPerTypes(type)} key={index} style={{color: colorStyleOne[0].color, background: colorStyleOne[0].backgroundColor}}>
+                                    <img src={colorStyleOne[0].ico} alt="icoType" />
+                                    {type}
+                                </span>
                             )}
                         })
                     }

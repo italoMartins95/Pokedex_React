@@ -1,4 +1,5 @@
 import Styles from "../layout/Pokemon.module.css"
+import { defaultColorForTypes } from "../../Api"
 
 import { FaBalanceScaleRight } from "react-icons/fa"
 import { SlEnergy } from "react-icons/sl"
@@ -14,10 +15,15 @@ function Pokemon({pokemonName , pokemonImg , pokemonAlt , pokemonId , pokemonTyp
                 <h3>{pokemonName}</h3>
             </div>
             <div className={Styles.pokemonCardMediun}>
-                {pokemonTypes.map((pokemon , index) => {
-                    return(
-                        <p key={index}>{pokemon.type.name}</p>
-                    )
+                {
+                    pokemonTypes.map((pokemon , index) => {
+                            let colorStyleOne = defaultColorForTypes.filter(el => el.nome == pokemon.type.name)
+                        return(
+                            <p key={index} style={{background: colorStyleOne[0].backgroundColor}}>
+                                <img src={colorStyleOne[0].ico} alt="icoType" />
+                                {pokemon.type.name}
+                            </p>
+                        )
                 })}
             </div>
             <div className={Styles.pokemonCardBottom}>
