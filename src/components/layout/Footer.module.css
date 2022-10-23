@@ -1,3 +1,7 @@
+.Link{
+    text-decoration: none;
+}
+
 .footer{
     display: flex;
     justify-content: flex-end;

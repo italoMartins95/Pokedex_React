@@ -1,3 +1,9 @@
+.header{
+    position: relative; 
+    
+    width: 100%;
+}
+
 .headerContent{
     display: flex;
     justify-content: space-around;
@@ -10,7 +16,7 @@
 }
 
 .headerContent img{
-    width: 400px;
+    width: 450px;
 
     margin-top: 150px;
 
@@ -18,13 +24,9 @@
 }
 
 .headerContent svg{
-    font-size: 400px;
+    font-size: 500px;
 
     color: white;
-}
-
-.header{
-    position: relative;    
 }
 
 .header img{

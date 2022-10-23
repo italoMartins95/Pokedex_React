@@ -1,0 +1,47 @@
+.details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate( -50%, -50%);
+
+    width: 90vw;
+    height: 310px;
+
+    padding: 30px;
+
+    z-index: 10;
+
+    background: rgba(14, 20, 140, 0.192);
+    color: white;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.details > button{
+    position: absolute;
+    top: 15px;
+    right: 12px;
+
+    font-size: 40px;
+
+    background-color: transparent;
+    color: white;
+    border: none;
+
+    cursor: pointer;
+}
+
+@media (max-width: 450px){
+    .details{
+        width: 75vw;
+        height: 65vh;
+
+        padding: 30px;
+    }
+}

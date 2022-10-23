@@ -64,7 +64,7 @@ function Search({onSearchHandle , onSearchTypeHandle , nowPage , totPagination ,
             <div className={Styles.searchTypes}>
                 <span onClick={() => searchPokemonPerTypes(undefined)} className={Styles.btnInicio}>
                     <AiOutlineHome />
-                    Inicio
+                    Início
                 </span>
                 <h3>
                     Pesquisar por tipo
