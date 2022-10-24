@@ -10,7 +10,7 @@ function App() {
     <>
     <Router>         
       <Routes>
-        <Route exact path='/' element={<Container />} />
+        <Route path='/' element={<Container />} />
         <Route path='/About' element={<About />} />
       </Routes>
       <Footer />
