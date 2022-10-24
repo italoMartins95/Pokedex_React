@@ -14,9 +14,9 @@ function Footer(){
                 <a href="https://www.linkedin.com/in/italo-martins-3a73b1190/" target="_blank" className={Styles.a}>
                     <BsLinkedin />
                 </a>
-                <Link to="/About" className={Styles.a}>
+                <a className={Styles.a}>
                     <HiInformationCircle />
-                </Link>
+                </a>
             </div>
         </footer>
     )

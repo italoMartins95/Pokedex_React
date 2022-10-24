@@ -8,13 +8,8 @@ function App() {
 
   return (
     <>
-    <Router>         
-      <Routes>
-        <Route path="/" element={<Container />} />
-        <Route path="/About" element={<About />} />
-      </Routes>
+      <Container />
       <Footer />
-    </Router>
     </>
   );
 }
