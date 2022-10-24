@@ -128,7 +128,7 @@
         width: 180px;
         height: 180px;
 
-        margin: 5px;
+        margin: 10px;
     }
 
     .pokemonCard img{
@@ -157,7 +157,7 @@
     }
 
     .btnMoreInformations{
-        height: 25px;
+        height: 30px;
         font-size: 12px;
 
         font-weight: bold;
