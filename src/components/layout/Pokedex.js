@@ -8,8 +8,8 @@ import Loader from "./Loader"
 
 function Pokedex({pokemons , loading , openCloseDetails}){  
 
-    function openCloseUp(){
-        openCloseDetails()
+    function openCloseUp(pokemonSelf){
+        openCloseDetails(pokemonSelf)
     }
 
     return(
@@ -34,6 +34,7 @@ function Pokedex({pokemons , loading , openCloseDetails}){
                                                  pokemonHeight={el.height}
                                                  colorsStyle={colorStyleOne[0]}
                                                  openCloseUp={openCloseUp}
+                                                 pokemonSelf={el}
                                                  />
                                 )
                             } 

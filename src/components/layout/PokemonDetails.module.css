@@ -1,18 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 .details{
     position: fixed;
     top: 50%;
     left: 50%;
 
+    display: flex;
+
     transform: translate( -50%, -50%);
 
-    width: 90vw;
-    height: 310px;
+    width: 60vw;
+    height: 400px;
 
     padding: 30px;
 
     z-index: 10;
 
-    background: rgba(14, 20, 140, 0.192);
+    background: rgba(14, 20, 140, 0.164);
     color: white;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 
@@ -37,11 +41,167 @@
     cursor: pointer;
 }
 
+.detailsCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 300px;
+    height: 100%;
+
+    margin: 0;
+}
+
+.detailsCard > img{
+    width: 250px;
+}
+
+.detailsId{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detailsTypes{
+    display: flex;
+    margin: 10px 0;
+}
+
+.detailsTypes > p{
+    margin: 0 10px;
+    padding: 5px 10px;
+
+    border-radius: 7px;
+}
+
+.detailsTypes > p img{
+    margin-right: 5px;
+}
+
+.detailsMeasurements{
+    display: flex;
+}
+
+.flexBoxColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 10px;
+}
+
+.flexBoxRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flexBoxRow svg{
+    margin: 0 5px;
+}
+
+.detailsMed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+.detailsMed span{
+    display: block;
+
+    width: 1px;
+    height: 40%;
+
+    background-color: rgba(255, 255, 255, 0.422);
+
+    margin: 7px 0;
+}
+
+.detailsMed svg{
+    font-size: 50px;
+
+    color: rgba(255, 255, 255, 0.493);
+
+    transform: rotate(45deg);
+}
+
+.detailsMore{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Montserrat';
+}
+
+.detailsMore > p{
+    font-size: 40px;
+}
+
+.detailsMore li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 20px;
+
+    width: 450px;
+}
+
+.detailsMore span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
 @media (max-width: 450px){
-    .details{
+    .details{ 
+        flex-direction: column;      
+
         width: 75vw;
         height: 65vh;
 
         padding: 30px;
+    }
+
+    .detailsCard > img{
+        width: 150px;
+    }
+
+    .detailsMed{
+        flex-direction: row;
+
+        margin: 10px 0;
+    }      
+    
+    .detailsMed span{
+        width: 40%;
+        height: 1px;
+    }
+
+    .detailsMore{
+        transform: translateY(-15px);
+    }
+
+    .detailsMore > p{
+        font-size: 35px;
+
+        margin: 0 0 10px 0;
+    }
+
+    .detailsMore li{
+        width: 100%;
+    }
+
+    .detailsMed svg{  
+        transform: rotate(0);
+
+        margin: 0 5px;
     }
 }

@@ -5,10 +5,10 @@ import { FaBalanceScaleRight } from "react-icons/fa"
 import { SlEnergy } from "react-icons/sl"
 import { AiOutlineColumnHeight } from "react-icons/ai"
 
-function Pokemon({pokemonName , pokemonImg , pokemonAlt , pokemonId , pokemonTypes , pokemonWeight , pokemonHeight , colorsStyle , openCloseUp}){
+function Pokemon({pokemonName , pokemonImg , pokemonAlt , pokemonId , pokemonTypes , pokemonWeight , pokemonHeight , colorsStyle , openCloseUp , pokemonSelf}){
 
     function openCloseDetails(){
-        openCloseUp()
+        openCloseUp(pokemonSelf)
     }
 
     return(

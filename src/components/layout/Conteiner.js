@@ -22,6 +22,7 @@ function Conteiner(){
   const [searchVisible , setSearchVisible] = useState(false)
 
   const [openDetails , setOpenDetails] = useState(false)
+  const [pokemonDetails , setPokemonDetails] = useState()
 
 
   const search = async (pokemon) => {
@@ -79,7 +80,8 @@ function Conteiner(){
     }
   }
 
-  function openClose(){
+  function openClose(pokemonSelf){
+    setPokemonDetails(pokemonSelf)
     setOpenDetails(!openDetails)
   }
 
@@ -123,7 +125,8 @@ function Conteiner(){
             }
             {
               openDetails && 
-                <PokemonDetails closeDetails={openClose}/>
+                <PokemonDetails closeDetails={openClose}
+                                pokemonDetails={pokemonDetails}/>
             }
         </main>
     )
