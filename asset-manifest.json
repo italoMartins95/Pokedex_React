@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Pokedex_React/static/css/main.f57acdb1.css",
+    "main.css": "/Pokedex_React/static/css/main.7db1d7c1.css",
     "main.js": "/Pokedex_React/static/js/main.ee4b2442.js",
     "static/js/787.28cb0dcd.chunk.js": "/Pokedex_React/static/js/787.28cb0dcd.chunk.js",
     "static/media/375px-Charizard_SSBU.webp": "/Pokedex_React/static/media/375px-Charizard_SSBU.ad83adf66b73aaf22495.webp",
@@ -23,12 +23,12 @@
     "static/media/water.svg": "/Pokedex_React/static/media/water.0f0868150974ee963cfe2da679c6465b.svg",
     "static/media/eletric.svg": "/Pokedex_React/static/media/eletric.4c5844bd09465eda9cda555b22f67468.svg",
     "index.html": "/Pokedex_React/index.html",
-    "main.f57acdb1.css.map": "/Pokedex_React/static/css/main.f57acdb1.css.map",
+    "main.7db1d7c1.css.map": "/Pokedex_React/static/css/main.7db1d7c1.css.map",
     "main.ee4b2442.js.map": "/Pokedex_React/static/js/main.ee4b2442.js.map",
     "787.28cb0dcd.chunk.js.map": "/Pokedex_React/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f57acdb1.css",
+    "static/css/main.7db1d7c1.css",
     "static/js/main.ee4b2442.js"
   ]
 }
